@@ -1,0 +1,12 @@
+mvn archetype:generate -DgroupId=kz.artband.core.utils -DartifactId=dateUtils -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+jar tf target/dateutils.jar 
+
+java -jar -Dlog4j.configuration=file:/full_path/log4j.properties target/dateutils.jar
+
+
+http://localhost:8091/entry-point/test
+
+docs
+https://www.eclipse.org/jetty/documentation/current/quickstart-config-what.html
+https://www.dovydasvenckus.dev/rest/2017/08/20/jersey-on-embedded-jetty/
